@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost:3306/Homework3?createDatabaseIfNotExist=true
+        </property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL57Dialect</property>
+        <property name="show_sql">true</property>
+
+        <mapping package="it.pojos"/>
+        <mapping class="it.pojos.Empl1"/>
+        <mapping class="it.pojos.Manager1"/>
+        <mapping class="it.pojos.Worker1"/>
+
+        <mapping class="it.pojos.Empl2"/>
+        <mapping class="it.pojos.Manager2"/>
+        <mapping class="it.pojos.Worker2"/>
+
+        <mapping class="it.pojos.Empl3"/>
+        <mapping class="it.pojos.Manager3"/>
+        <mapping class="it.pojos.Worker3"/>
+
+    </session-factory>
+</hibernate-configuration>

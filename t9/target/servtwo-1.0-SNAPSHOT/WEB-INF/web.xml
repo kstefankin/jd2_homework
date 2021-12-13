@@ -7,7 +7,7 @@
         <servlet-class>web.SecondServ</servlet-class>
         <init-param>
             <param-name>filename</param-name>
-            <param-value>D:/java/apache-tomcat-10.0.11/webapps/servtwo/WEB-INF/classes/counter.txt</param-value>
+            <param-value>D:/java/apache-tomcat-10.0.11/webapps/servtwo/WEB-INF/counter.txt</param-value>
         </init-param>
 
     </servlet>

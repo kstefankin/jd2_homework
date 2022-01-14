@@ -22,7 +22,11 @@ public class PersonLoader {
 
         personDao.deletePerson(person);
 
+
         // task 3 flush & refresh
+
+
+
         Person person4 = new Person(null, 80, "Peter", "Kozak");
         Person person5 = new Person(null, 90, "Kevin", "Pozner");
         Person person6 = new Person(null, 60, "Dmitry", "Kisel");
@@ -31,6 +35,9 @@ public class PersonLoader {
 
         Session session = sessionFactory.openSession();
         session.getTransaction().begin();
+
+
+
         session.save(person4);
         session.save(person5);
         session.getTransaction().commit();

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New manager</title>
+</head>
+<body>
+
+<form th:method="POST" th:action="@{/addNewMan}" th:object="${manager1}">
+<div>
+    <label for="name"> Enter name: </label>
+    <input type="text" th:field="*{name}" id="name"/>
+
+    <br/>
+
+    <label for="surname">Enter surname: </label>
+    <input type="text" th:field="*{surname}" id="surname"/>
+    <br/>
+
+    <label for="otdel">Enter otdel: </label>
+    <input type="text" th:field="*{otdel}" id="otdel"/>
+    <br/>
+
+    <label for="dolzhnoct">Enter dolzhnoct: </label>
+    <input type="text" th:field="*{dolzhnoct}" id="dolzhnoct"/>
+    <br/>
+
+    <input type="submit" value="Add new manager!"/>
+</div>
+</form>
+
+
+
+<a href="/p5-task16/exit">Exit</a>
+</body>
+</html>
